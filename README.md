@@ -17,5 +17,6 @@
 
 ## 鸣谢
 *   本项目基于[DouZero](https://github.com/kwai/DouZero)
+*   灵感源自https://github.com/tianqiraf/DouZero_For_HappyDouDiZhu
 
 
