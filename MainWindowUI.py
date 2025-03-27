@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(440, 395)
+        Form.resize(440, 600)
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(9)
@@ -106,6 +106,25 @@ class Ui_Form(object):
         self.InitCard.clicked.connect(Form.init_cards)
         self.Stop.clicked.connect(Form.stop)
         QtCore.QMetaObject.connectSlotsByName(Form)
+        self.inputBtn = QtWidgets.QPushButton(Form)
+        self.inputBtn.setObjectName("inputBtn")
+        self.inputBtn.setGeometry(QtCore.QRect(20, 20, 100, 30))
+
+        # 历史出牌记录
+        self.HistoryLabel = QtWidgets.QLabel(Form)
+        self.HistoryLabel.setGeometry(QtCore.QRect(20, 400, 200, 20))
+        self.HistoryLabel.setText("历史出牌记录")
+
+        self.HistoryList = QtWidgets.QListWidget(Form)
+        self.HistoryList.setGeometry(QtCore.QRect(20, 420, 400, 100))
+
+        # 剩余牌数
+        self.RemainingCardsLabel = QtWidgets.QLabel(Form)
+        self.RemainingCardsLabel.setGeometry(QtCore.QRect(20, 530, 200, 20))
+        self.RemainingCardsLabel.setText("剩余牌数")
+
+        self.RemainingCardsText = QtWidgets.QLabel(Form)
+        self.RemainingCardsText.setGeometry(QtCore.QRect(20, 550, 400, 60))
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
