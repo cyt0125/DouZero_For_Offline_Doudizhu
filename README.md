@@ -9,7 +9,7 @@
 *   DouZero-WP (`baselines/douzero_WP/`): 以胜率（Winning Percentage, WP）为目标训练的Douzero智能体
 
 ## 使用步骤
-1. 打开ddzpy.py，运行即可开始
+1. 打开ddz.ipynb，运行即可开始
 2. 选择玩家收到的牌和地主牌，以及地主为玩家还是上下家
 3. 在填写好每轮玩家出牌的信息，在玩家出牌时选择AI推荐，AI即会帮助玩家推荐出牌
 4. 游戏结束后弹出对话框提示输赢。
